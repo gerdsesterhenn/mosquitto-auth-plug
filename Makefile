@@ -138,7 +138,7 @@ LDFLAGS := $(CFG_LDFLAGS)
 LDFLAGS += $(BE_LDFLAGS) -L$(MOSQUITTO_SRC)/lib/ -L/
 # LDFLAGS += -Wl,-rpath,$(../../../../pubgit/MQTT/mosquitto/lib) -lc
 # LDFLAGS += -export-dynamic
-LDADD = $(BE_LDADD) $(OSSLIBS) -lmosquitto
+LDADD = $(BE_LDADD) $(OSSLIBS) 
 
 all: printconfig auth-plug.so np
 
